@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "/snap/arduino/current/tools/**",
+                "/snap/arduino/current/hardware/arduino/avr/**",
+                "${workspaceRoot}",
+                "/snap/arduino/current/hardware/tools/**",
+                "/snap/arduino/current/libraries/**",
+                "/home/carlos/Arduino/hardware/tools/**",
+                "/home/carlos/Arduino/libraries/**"
+            ],
+            "forcedInclude": [
+                "/snap/arduino/current/hardware/arduino/avr/cores/arduino/Arduino.h"
+            ],
+            "intelliSenseMode": "msvc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
