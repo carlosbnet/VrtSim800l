@@ -1,13 +1,20 @@
 
+#include <VrtSim800l.h>
+
+VrtSim800l sim800(11,10);
+
 
 void setup() {
   // put your setup code here, to run once:
-
-  
+  Serial.begin(9600);
+  sim800.begin();
 
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  Serial.println("------------Inicio-----------");
+  Serial.println(sim800.getNumberCardSim());
+  Serial.println("------------Fim-----------");
+  
 
 }

@@ -30,24 +30,34 @@ class VrtSim800l : public  SoftwareSerial
     uint8_t  RX_PIN;
     uint8_t  TX_PIN;
 
-    //Contrutores
+    //Constructs
     VrtSim800l();
     VrtSim800l(uint8_t rx, uint8_t tx);
     
-    //Metodos
+    //Methods
+
+    //Initialize
+
     void begin();
     void begin(uint32_t baud);
 
-
+    //basic information
     boolean isOperator();
-    String  isRegistered();
+    String  statusRegistered();
+
+
+    //Gets
     String getImei();
     String getIntensitySignal();
-   
+    String getBattery();
+    String getNumberCardSim();
+    String getOperatorConnect();
+    String getListOperator();
+    String getUseVelocitySerial();
+    String getVelocityAvailable();
+    String getFabricator();
 
-
-
-
+    //
 
 
 
@@ -57,7 +67,7 @@ class VrtSim800l : public  SoftwareSerial
 
     uint32_t _baud;
     String _serialRead();
-    String _serialRead(uint32_t timeout);
+    String _serialRead(int timeout);
 
 
 
